@@ -9,8 +9,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "./utils/ERC69Errors.sol";
 
-/// @notice ERC69_721
-///         A novel token standard combining the flexibility of ERC721 NFTs with 
+/// @title ERC69_721
+/// @notice ERC69_721 is a novel token standard combining the flexibility of ERC721 NFTs with 
 ///         unique wrapping and unwrapping mechanisms. This contract introduces a 
 ///         seamless way to wrap ERC20 tokens into ERC721 NFTs, allowing for unique 
 ///         asset management and liquidity options.
@@ -29,9 +29,10 @@ import "./utils/ERC69Errors.sol";
 ///         wrapped into ERC721 tokens, creating a new layer of value transfer 
 ///         and interaction within the Ethereum ecosystem.
 ///
-/// @author Created by TG: @the_inglourious_basterd
+/// @author TG: @the_inglourious_basterd
 ///         Feel free to reach out with questions, suggestions, or collaborations.
 ///
+/// @custom:experimental This is an experimental contract and is not audited.
 abstract contract ERC69_721 is
     ERC69Errors,
     ERC721,

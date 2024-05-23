@@ -8,8 +8,8 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./utils/ERC69Errors.sol";
 
-/// @notice ERC69_1155
-///         An innovative token standard that extends ERC1155 for enhanced flexibility,
+/// @title ERC69_1155
+/// @notice ERC69_1155 is an innovative token standard that extends ERC1155 for enhanced flexibility,
 ///         incorporating unique mechanisms for wrapping and unwrapping ERC20 tokens.
 ///         This approach enables a unified management of fungible and non-fungible tokens (NFTs),
 ///         with provisions for asset liquidity and innovative token interactions.
@@ -28,9 +28,10 @@ import "./utils/ERC69Errors.sol";
 ///         Users are encouraged to review the contract's assumptions and limitations as part of their
 ///         integration process.
 ///
-/// @author Created by TG: @the_inglourious_basterd
+/// @author TG: @the_inglourious_basterd
 ///         Feel free to reach out with questions, suggestions, or collaborations.
 ///
+/// @custom:experimental This is an experimental contract and is not audited.
 abstract contract ERC69_1155 is
     ERC69Errors,
     ERC1155,
